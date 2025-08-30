@@ -1,6 +1,6 @@
 version: '3'
 services:
-  # Service for managing books
+  # Service to manage books
   book-service:
     build: ./book-service
     ports:
@@ -8,7 +8,7 @@ services:
     depends_on:
       - mongo
 
-  # Service for managing authors
+  # Service to manage authors
   author-service:
     build: ./author-service
     ports:
@@ -16,7 +16,7 @@ services:
     depends_on:
       - mongo
 
-  # Service for managing users
+  # Service to manage users
   user-service:
     build: ./user-service
     ports:
