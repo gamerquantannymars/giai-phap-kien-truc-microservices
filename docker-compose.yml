@@ -33,6 +33,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=secret
       # Allow access from these services for secure connections
+      # Important for services that need to connect to MongoDB externally
       - MONGO_ALLOW_EXTERNAL_CONNECTIONS=true
 
 networks:
