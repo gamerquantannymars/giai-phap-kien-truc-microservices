@@ -24,7 +24,7 @@ services:
     depends_on:
       - mongo
 
-  # MongoDB service
+  # MongoDB service for storage
   mongo:
     image: mongo
     ports:
@@ -33,3 +33,5 @@ services:
 networks:
   default:
     driver: bridge
+
+# This Docker Compose file defines the services used in the application.
